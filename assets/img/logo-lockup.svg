@@ -1,0 +1,11 @@
+<svg width="500" height="100" viewBox="0 0 500 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Great Canadian Property Services">
+  <g transform="translate(0,10)">
+    <path d="M60 5 L75 30 L110 25 L85 50 L100 80 L60 65 L20 80 L35 50 L10 25 L45 30 Z" fill="#C4956A"/>
+    <path d="M40 55 L60 40 L80 55 V85 H40 Z" fill="#FFFFFF"/>
+    <rect x="54" y="65" width="12" height="12" fill="#C4956A"/>
+  </g>
+  <g transform="translate(140,35)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="2" fill="#1A1A1A">GREAT CANADIAN</text>
+    <text x="0" y="30" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3" fill="#C4956A">PROPERTY SERVICES</text>
+  </g>
+</svg>

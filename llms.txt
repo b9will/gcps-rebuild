@@ -1,0 +1,59 @@
+# Great Canadian Property Services
+
+> Vancouver's premier property care provider. Expert pressure washing, window cleaning, exterior maintenance, and custom holiday lighting for the finest homes and commercial properties across the Lower Mainland of British Columbia.
+
+Great Canadian Property Services is a fully insured and licensed exterior maintenance company based in Surrey, BC. We hold a 5.0-star rating on Google and serve 14 communities across Greater Vancouver, the Fraser Valley, and the Sea to Sky corridor. All assessments are complimentary and no-obligation.
+
+## Services
+
+### Residential
+
+- [House Washing](/residential-pressure-washing/house-washing/) — Soft-wash removal of algae, mildew, and grime from siding, trim, and exterior surfaces.
+- [Roof Cleaning](/residential-pressure-washing/roof-cleaning/) — Safe elimination of moss, lichen, algae, and gloeocapsa magma to extend shingle life.
+- [Window Cleaning](/window-cleaning/) — Water-fed pole and traditional squeegee for spotless interior and exterior glass.
+- [Driveway Cleaning](/residential-pressure-washing/driveway-cleaning/) — Removal of oil, tire rubber, organic stains, and embedded grime from concrete and asphalt.
+- [Patio Cleaning](/residential-pressure-washing/patio-cleaning/) — Tailored care for stone, stamped concrete, pavers, and wood decking.
+- [Concrete Cleaning](/residential-pressure-washing/concrete-cleaning/) — Professional stain and organic growth removal from walkways, porches, and poured surfaces.
+- [Concrete & Paver Sanding](/residential-pressure-washing/concrete-paver-sanding/) — Joint sand restoration to stabilise pavers and deter weeds.
+- [Concrete & Paver Sealing](/residential-pressure-washing/concrete-paver-sealing/) — Protective barrier against UV, moisture, staining, and organic growth.
+
+### Commercial
+
+- [Building Washing](/commercial-pressure-washing/building-washing/) — Soft-wash and pressure-wash care for office buildings, retail centres, and strata complexes.
+- [Commercial Window Cleaning](/commercial-pressure-washing/window-cleaning/) — Recurring storefront and multi-storey glass programmes.
+- [Fleet Washing](/commercial-pressure-washing/fleet-washing/) — Scheduled care for company vehicles, delivery trucks, and heavy equipment.
+- [Gutter Cleaning](/commercial-pressure-washing/gutter-cleaning/) — Thorough clearing and exterior brightening to protect the building envelope.
+- [Industrial Pressure Washing](/commercial-pressure-washing/industrial-pressure-washing/) — Heavy-duty cleaning for warehouses, loading docks, and manufacturing environments.
+
+### Seasonal
+
+- [Holiday Lighting](/christmas-lighting/) — Custom design, professional installation, maintenance, and removal of exterior Christmas and holiday lighting.
+
+## Service Areas
+
+Vancouver, Surrey (home base), North Vancouver, West Vancouver, Richmond, Coquitlam, Delta, Langley, White Rock, Maple Ridge, Abbotsford, Chilliwack, Squamish, Whistler
+
+Full area pages: [/near-me/](/near-me/)
+
+## Contact
+
+- Phone: 604-260-6285
+- Email: info@greatcanadianpropertyservices.ca
+- Address: 112-15428 31 Ave, Surrey, BC V3Z 3W4
+- Request an assessment: [/contact-us/](/contact-us/)
+
+## Frequently Asked Questions
+
+- [Site-wide FAQ](/faq/) — coverage, methods, frequencies, pricing, insurance, and practice
+- [House Washing FAQ](/residential-pressure-washing/house-washing/faq/)
+- [Roof Cleaning FAQ](/residential-pressure-washing/roof-cleaning/faq/)
+- [Holiday Lighting FAQ](/christmas-lighting/faq/)
+
+## Optional
+
+- [Articles & Guides](/pressure-washing-articles/)
+- [Client Reviews](/reviews/)
+- [About Us](/about-us/)
+- [All Service Areas](/near-me/)
+- [HTML Sitemap](/sitemap/)
+- [XML Sitemap](https://www.greatcanadianpropertyservices.ca/sitemap.xml)
