@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Node
+node_modules/
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.*
+
+# Scraper raw source (kept locally as build input, not for deploy)
+scraper/scraped-pages/
+
+# Editor
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--
+  TEMPLATE: ARTICLE PAGE (articles/)
+  Use for: all /pressure-washing-articles/* blog posts
+  Authority strategy:
+  - Targets informational KWs ("how often", "cost of", "pros vs cons")
+  - Internal links to relevant service pages throughout the body
+  - FAQ schema where applicable
+  - Article schema with author, datePublished, dateModified
+  - Sidebar with related services and areas
+
+  Variables:
+  {{ARTICLE_TITLE}}     Full SEO H1 title
+  {{META_DESC}}         150-160 char description
+  {{CANONICAL_URL}}     Full URL
+  {{OG_IMAGE}}          1200x630 image URL
+  {{DATE_PUBLISHED}}    ISO 8601 e.g. 2024-11-01
+  {{DATE_MODIFIED}}     ISO 8601 - update on every edit
+  {{READING_TIME}}      e.g. "4 min read"
+  {{ARTICLE_BODY}}      Full HTML article content
+  {{RELATED_ARTICLES}}  Array of {title, url, desc}
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ARTICLE_TITLE}} | Great Canadian Property Services</title>
+  <meta name="description" content="{{META_DESC}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Great Canadian Property Services">
+  <meta property="og:title" content="{{ARTICLE_TITLE}}">
+  <meta property="og:description" content="{{META_DESC}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:locale" content="en_CA">
+  <meta property="article:published_time" content="{{DATE_PUBLISHED}}">
+  <meta property="article:modified_time" content="{{DATE_MODIFIED}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="geo.region" content="CA-BC">
+  <link rel="icon" href="/assets/img/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/design-system.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <link rel="stylesheet" href="/assets/css/article.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "{{ARTICLE_TITLE}}",
+        "description": "{{META_DESC}}",
+        "image": "{{OG_IMAGE}}",
+        "datePublished": "{{DATE_PUBLISHED}}",
+        "dateModified": "{{DATE_MODIFIED}}",
+        "author": {
+          "@type": "Organization",
+          "name": "Great Canadian Property Services",
+          "url": "https://greatcanadianpropertyservices.ca"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Great Canadian Property Services",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://greatcanadianpropertyservices.ca/assets/img/logo.png"
+          }
+        },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "{{CANONICAL_URL}}" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://greatcanadianpropertyservices.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://greatcanadianpropertyservices.ca/articles/" },
+          { "@type": "ListItem", "position": 3, "name": "{{ARTICLE_TITLE}}", "item": "{{CANONICAL_URL}}" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-nav site-nav--solid" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Great Canadian Property Services">
+        Great Canadian <span>Property Services</span>
+      </a>
+      <button class="nav-burger" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <a href="/residential/">Residential</a>
+        <a href="/commercial/">Commercial</a>
+        <a href="/residential/concrete-cleaning">Concrete Care</a>
+        <a href="/christmas-lighting">Holiday Lighting</a>
+        <a href="/window-cleaning">Window Cleaning</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/contact-us" class="nav-cta">Get Assessment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BREADCRUMB -->
+    <div class="container" style="padding-top:calc(var(--nav-h) + 0.5rem);">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/articles/">Articles</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">{{ARTICLE_TITLE_SHORT}}</span>
+      </nav>
+    </div>
+
+    <!-- ARTICLE HERO -->
+    <section class="page-hero" aria-label="Article header">
+      <img src="{{OG_IMAGE}}" alt="" class="page-hero__bg" loading="eager" aria-hidden="true">
+      <div class="container page-hero__content">
+        <p class="eyebrow page-hero__eyebrow">Articles &middot; {{READING_TIME}}</p>
+        <h1 class="heading-lg page-hero__title animate-in" style="max-width:800px;">{{ARTICLE_TITLE}}</h1>
+        <p style="font-size:var(--fs-xs); color:rgba(255,255,255,0.5); margin-top:1.5rem; letter-spacing:0.08em; text-transform:uppercase;">
+          Published <time datetime="{{DATE_PUBLISHED}}">{{DATE_PUBLISHED_FORMATTED}}</time>
+          &nbsp;&middot;&nbsp;
+          Updated <time datetime="{{DATE_MODIFIED}}">{{DATE_MODIFIED_FORMATTED}}</time>
+        </p>
+      </div>
+    </section>
+
+    <!-- ARTICLE BODY + SIDEBAR -->
+    <section class="section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- MAIN CONTENT -->
+          <article class="article-body">
+            {{ARTICLE_BODY}}
+
+            <!-- CTA within article -->
+            <div class="article-cta">
+              <div class="divider" style="margin:0 0 1.5rem;"></div>
+              <p class="eyebrow">Get Started</p>
+              <h3 class="heading-sm" style="margin:0.75rem 0 1rem;">Ready for a Professional Assessment?</h3>
+              <p style="font-size:var(--fs-sm); color:var(--c-text-mid); margin-bottom:1.5rem; line-height:1.8;">
+                Great Canadian Property Services provides complimentary, no-obligation assessments throughout Greater Vancouver.
+              </p>
+              <a href="/contact-us" class="btn btn-primary">Request Complimentary Assessment</a>
+            </div>
+          </article>
+
+          <!-- SIDEBAR -->
+          <aside class="article-sidebar" aria-label="Sidebar">
+
+            <!-- Services CTA -->
+            <div class="sidebar-card">
+              <p class="eyebrow" style="margin-bottom:0.75rem;">Our Services</p>
+              <ul class="sidebar-links">
+                <li><a href="/residential/house-washing">House Washing</a></li>
+                <li><a href="/residential/roof-cleaning">Roof Cleaning</a></li>
+                <li><a href="/window-cleaning">Window Cleaning</a></li>
+                <li><a href="/residential/driveway-cleaning">Driveway Cleaning</a></li>
+                <li><a href="/residential/concrete-paver-sealing">Paver Sealing</a></li>
+                <li><a href="/commercial/">Commercial Services</a></li>
+                <li><a href="/christmas-lighting">Holiday Lighting</a></li>
+              </ul>
+            </div>
+
+            <!-- Area CTA -->
+            <div class="sidebar-card" style="margin-top:1.5rem;">
+              <p class="eyebrow" style="margin-bottom:0.75rem;">Service Areas</p>
+              <ul class="sidebar-links">
+                <li><a href="/near-me/vancouver">Vancouver</a></li>
+                <li><a href="/near-me/surrey">Surrey</a></li>
+                <li><a href="/near-me/north-vancouver">North Vancouver</a></li>
+                <li><a href="/near-me/richmond">Richmond</a></li>
+                <li><a href="/near-me/coquitlam">Coquitlam</a></li>
+                <li><a href="/near-me/">All 14 areas &rarr;</a></li>
+              </ul>
+            </div>
+
+            <!-- Assessment CTA -->
+            <div class="sidebar-cta" style="margin-top:1.5rem;">
+              <p style="font-family:var(--f-serif); font-size:var(--fs-lg); font-weight:300; margin-bottom:1rem; line-height:1.3;">
+                Complimentary property assessments. No obligation.
+              </p>
+              <a href="/contact-us" class="btn btn-primary" style="width:100%; justify-content:center;">Request Assessment</a>
+              <a href="tel:6042606285" class="btn btn-outline-dark" style="width:100%; justify-content:center; margin-top:0.75rem;">604-260-6285</a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED ARTICLES -->
+    <section class="section section--cream">
+      <div class="container">
+        <div style="text-align:center; max-width:560px; margin:0 auto 3rem;" class="reveal">
+          <p class="eyebrow">Continue Reading</p>
+          <div class="divider divider-center" style="margin:1rem auto 1.5rem;"></div>
+          <h2 class="heading-md">Related Articles</h2>
+        </div>
+        <div class="service-grid">
+          <!-- {{RELATED_ARTICLES}} - repeat:
+          <a href="/articles/article-slug" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Article Title</h3>
+            <p class="service-item__desc">One line teaser for the article.</p>
+          </a>
+          -->
+        </div>
+        <div style="text-align:center; margin-top:3rem;">
+          <a href="/articles/" class="btn btn-outline-dark">All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="container">
+        <p class="eyebrow" style="color:var(--c-gold);">Get Started</p>
+        <div class="divider divider-center" style="background:var(--c-gold); margin:1rem auto 1.5rem;"></div>
+        <h2 class="heading-md" style="color:var(--c-white);">Experience <em>the Standard</em></h2>
+        <p style="font-family:var(--f-serif); font-size:var(--fs-md); opacity:0.7; margin-top:1rem; font-weight:300;">
+          Complimentary property assessments across Greater Vancouver.
+        </p>
+        <div class="btn-group">
+          <a href="/contact-us" class="btn btn-primary">Request Assessment</a>
+          <a href="tel:6042606285" class="btn btn-outline">Call 604-260-6285</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Great Canadian Property Services</div>
+          <p class="footer-tagline">Vancouver's premier property care provider. Expert pressure washing, window cleaning, and exterior maintenance across the Lower Mainland.</p>
+          <address class="footer-address" style="font-style:normal;">
+            112-15428 31 Ave<br>Surrey, BC V3Z 3W4<br>
+            <a href="tel:6042606285">604-260-6285</a><br>
+            <a href="mailto:info@greatcanadianpropertyservices.ca">info@greatcanadianpropertyservices.ca</a>
+          </address>
+        </div>
+        <div>
+          <p class="footer-col__title">Services</p>
+          <ul class="footer-col__links">
+            <li><a href="/residential/house-washing">House Washing</a></li>
+            <li><a href="/residential/roof-cleaning">Roof Cleaning</a></li>
+            <li><a href="/window-cleaning">Window Cleaning</a></li>
+            <li><a href="/residential/concrete-cleaning">Concrete Cleaning</a></li>
+            <li><a href="/commercial/">Commercial</a></li>
+            <li><a href="/christmas-lighting">Holiday Lighting</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col__title">Service Areas</p>
+          <ul class="footer-col__links">
+            <li><a href="/near-me/vancouver">Vancouver</a></li>
+            <li><a href="/near-me/surrey">Surrey</a></li>
+            <li><a href="/near-me/north-vancouver">North Vancouver</a></li>
+            <li><a href="/near-me/richmond">Richmond</a></li>
+            <li><a href="/near-me/">All 14 areas &rarr;</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col__title">Connect</p>
+          <ul class="footer-col__links">
+            <li><a href="https://www.google.com/maps?cid=14568573342021237088" target="_blank" rel="noopener">Google Reviews</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/articles/">Articles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year"></span> Great Canadian Property Services. All rights reserved.</span>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="/privacy">Privacy Policy</a> &middot;
+          <a href="/terms">Terms of Use</a> &middot;
+          <a href="/sitemap">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

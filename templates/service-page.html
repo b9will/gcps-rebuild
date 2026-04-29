@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--
+  TEMPLATE: SERVICE PAGE
+  Use for: all residential/* and commercial/* service detail pages
+  e.g. house-washing, roof-cleaning, driveway-cleaning, building-washing, etc.
+
+  Variables to replace:
+  {{PAGE_TITLE}}          Full SEO title
+  {{META_DESC}}           150-160 char meta description
+  {{CANONICAL_URL}}       Full canonical URL
+  {{OG_IMAGE}}            Full URL to hero image (1200x630)
+  {{SCHEMA_JSON}}         LocalBusiness + Service schema (see schemas/)
+  {{BREADCRUMB_SECTION}}  e.g. "Residential" | "Commercial"
+  {{BREADCRUMB_SECTION_URL}} e.g. /residential/
+  {{EYEBROW}}             e.g. "Residential · Vancouver" 
+  {{HERO_TITLE}}          Main H1 heading (can include <em> for italic gold)
+  {{HERO_DESC}}           1-2 sentence hero description
+  {{HERO_IMAGE_URL}}      Hero background image URL
+  {{HERO_IMAGE_ALT}}      Alt text for hero image
+  {{SERVICE_TITLE}}       Section 1 heading
+  {{SERVICE_INTRO}}       1-2 paragraph intro about the service
+  {{BENEFITS_HEADING}}    e.g. "Why Professional House Washing Matters"
+  {{BENEFITS}}            Array: see benefit-item pattern below
+  {{PROCESS_TITLE}}       Our approach section heading
+  {{PROCESS_STEPS}}       Array: see process-step pattern below
+  {{FAQ_ITEMS}}           Array: see faq-item pattern below
+  {{CTA_HEADING}}         e.g. "Request a Complimentary Assessment"
+  {{CTA_DESC}}            Supporting line under CTA heading
+  {{RELATED_SERVICES}}    Array of {title, url, desc} for related service cards
+  {{AREAS_SERVED}}        Comma-separated city list for this service
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESC}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Great Canadian Property Services">
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{META_DESC}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:locale" content="en_CA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="geo.region" content="CA-BC">
+  <link rel="icon" href="/assets/img/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/design-system.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <script type="application/ld+json">{{SCHEMA_JSON}}</script>
+</head>
+
+<body>
+
+  <!-- NAV: solid on all interior pages -->
+  <header class="site-nav site-nav--solid" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Great Canadian Property Services">
+        Great Canadian
+        <span>Property Services</span>
+      </a>
+      <button class="nav-burger" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <a href="/residential/">Residential</a>
+        <a href="/commercial/">Commercial</a>
+        <a href="/residential/concrete-cleaning">Concrete Care</a>
+        <a href="/christmas-lighting">Holiday Lighting</a>
+        <a href="/window-cleaning">Window Cleaning</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/contact-us" class="nav-cta">Get Assessment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BREADCRUMB -->
+    <div class="container" style="padding-top: calc(var(--nav-h) + 0.5rem);">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="{{BREADCRUMB_SECTION_URL}}">{{BREADCRUMB_SECTION}}</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">{{HERO_TITLE_PLAIN}}</span>
+      </nav>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Page header">
+      <img src="{{HERO_IMAGE_URL}}" alt="{{HERO_IMAGE_ALT}}" class="page-hero__bg" loading="eager" fetchpriority="high">
+      <div class="container page-hero__content">
+        <p class="eyebrow page-hero__eyebrow">{{EYEBROW}}</p>
+        <h1 class="heading-lg page-hero__title animate-in">{{HERO_TITLE}}</h1>
+        <p class="page-hero__desc animate-in" data-delay="1">{{HERO_DESC}}</p>
+        <div style="margin-top:2rem;" class="animate-in" data-delay="2">
+          <a href="/contact-us" class="btn btn-primary">Request Complimentary Assessment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO / SERVICE OVERVIEW -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start;">
+          <div class="reveal">
+            <p class="eyebrow">{{EYEBROW}}</p>
+            <div class="divider" style="margin:1rem 0 1.5rem;"></div>
+            <h2 class="heading-md">{{SERVICE_TITLE}}</h2>
+          </div>
+          <div class="reveal" data-delay="1">
+            <div class="body-copy">{{SERVICE_INTRO}}</div>
+            <p style="margin-top:2rem;">
+              <a href="/contact-us" class="btn btn-outline-dark">Request Assessment</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS / WHAT'S INCLUDED -->
+    <section class="section section--cream">
+      <div class="container">
+        <div style="text-align:center; max-width:640px; margin:0 auto 4rem;" class="reveal">
+          <p class="eyebrow">What's Included</p>
+          <div class="divider divider-center" style="margin:1rem auto 1.5rem;"></div>
+          <h2 class="heading-md">{{BENEFITS_HEADING}}</h2>
+        </div>
+
+        <!-- BENEFIT ITEMS: repeat this block for each benefit -->
+        <div class="service-grid">
+          <!-- {{BENEFITS}} - repeat pattern below per item:
+          <div class="service-item reveal">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Benefit Title</h3>
+            <p class="service-item__desc">Short description of this benefit or included service element.</p>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width:560px; margin-bottom:4rem;" class="reveal">
+          <p class="eyebrow">Our Approach</p>
+          <div class="divider" style="margin:1rem 0 1.5rem;"></div>
+          <h2 class="heading-md">{{PROCESS_TITLE}}</h2>
+        </div>
+        <!-- PROCESS STEPS: repeat per step -->
+        <div class="process-steps">
+          <!-- {{PROCESS_STEPS}} - repeat pattern below:
+          <div class="process-step reveal">
+            <h3 class="process-step__title">Step Title</h3>
+            <p class="process-step__desc">What happens in this step.</p>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS SERVED (inline, no separate page needed for each service) -->
+    <section class="section section--cream">
+      <div class="container">
+        <div style="text-align:center; max-width:560px; margin:0 auto 3rem;" class="reveal">
+          <p class="eyebrow">Where We Work</p>
+          <div class="divider divider-center" style="margin:1rem auto 1.5rem;"></div>
+          <h2 class="heading-md">Serving <em>Greater Vancouver</em></h2>
+          <p style="font-size:var(--fs-sm); color:var(--c-text-mid); margin-top:1rem; line-height:1.7;">
+            {{AREAS_SERVED}}
+          </p>
+        </div>
+        <div class="areas-grid">
+          <!-- Auto-populate from areas list -->
+          <a href="/near-me/vancouver" class="area-item">Vancouver</a>
+          <a href="/near-me/surrey" class="area-item">Surrey</a>
+          <a href="/near-me/north-vancouver" class="area-item">North Vancouver</a>
+          <a href="/near-me/west-vancouver" class="area-item">West Vancouver</a>
+          <a href="/near-me/richmond" class="area-item">Richmond</a>
+          <a href="/near-me/coquitlam" class="area-item">Coquitlam</a>
+          <a href="/near-me/delta" class="area-item">Delta</a>
+          <a href="/near-me/langley" class="area-item">Langley</a>
+          <a href="/near-me/white-rock" class="area-item">White Rock</a>
+          <a href="/near-me/maple-ridge" class="area-item">Maple Ridge</a>
+          <a href="/near-me/abbotsford" class="area-item">Abbotsford</a>
+          <a href="/near-me/chilliwack" class="area-item">Chilliwack</a>
+          <a href="/near-me/squamish" class="area-item">Squamish</a>
+          <a href="/near-me/whistler" class="area-item">Whistler</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container" style="max-width:800px;">
+        <div style="margin-bottom:3rem;" class="reveal">
+          <p class="eyebrow">Common Questions</p>
+          <div class="divider" style="margin:1rem 0 1.5rem;"></div>
+          <h2 class="heading-md">Frequently Asked Questions</h2>
+        </div>
+        <!-- {{FAQ_ITEMS}} - repeat pattern below:
+        <details class="faq-item">
+          <summary>Question text here?</summary>
+          <p class="faq-item__body">Answer text here.</p>
+        </details>
+        -->
+      </div>
+    </section>
+
+    <!-- RELATED SERVICES -->
+    <section class="section section--cream">
+      <div class="container">
+        <div style="text-align:center; max-width:560px; margin:0 auto 3rem;" class="reveal">
+          <p class="eyebrow">More Services</p>
+          <div class="divider divider-center" style="margin:1rem auto 1.5rem;"></div>
+          <h2 class="heading-md">Related Services</h2>
+        </div>
+        <div class="service-grid">
+          <!-- {{RELATED_SERVICES}} - repeat pattern:
+          <a href="/residential/service-name" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Service Name</h3>
+            <p class="service-item__desc">Short description of the related service.</p>
+          </a>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="container">
+        <p class="eyebrow" style="color:var(--c-gold);">Get Started</p>
+        <div class="divider divider-center" style="background:var(--c-gold); margin:1rem auto 1.5rem;"></div>
+        <h2 class="heading-md" style="color:var(--c-white);">{{CTA_HEADING}}</h2>
+        <p style="font-family:var(--f-serif); font-size:var(--fs-md); opacity:0.7; margin-top:1rem; font-weight:300;">
+          {{CTA_DESC}}
+        </p>
+        <div class="btn-group">
+          <a href="/contact-us" class="btn btn-primary">Request Complimentary Assessment</a>
+          <a href="tel:6042606285" class="btn btn-outline">Call 604-260-6285</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Great Canadian Property Services</div>
+          <p class="footer-tagline">Vancouver's premier property care provider. Expert pressure washing, window cleaning, exterior maintenance, and custom holiday lighting across the Lower Mainland.</p>
+          <address class="footer-address" style="font-style:normal;">
+            112-15428 31 Ave<br>Surrey, BC V3Z 3W4<br>
+            <a href="tel:6042606285">604-260-6285</a><br>
+            <a href="mailto:info@greatcanadianpropertyservices.ca">info@greatcanadianpropertyservices.ca</a>
+          </address>
+        </div>
+        <div>
+          <p class="footer-col__title">Services</p>
+          <ul class="footer-col__links">
+            <li><a href="/residential/house-washing">House Washing</a></li>
+            <li><a href="/residential/roof-cleaning">Roof Cleaning</a></li>
+            <li><a href="/window-cleaning">Window Cleaning</a></li>
+            <li><a href="/residential/concrete-cleaning">Concrete Cleaning</a></li>
+            <li><a href="/residential/concrete-paver-sealing">Paver Sealing</a></li>
+            <li><a href="/commercial/">Commercial Services</a></li>
+            <li><a href="/christmas-lighting">Holiday Lighting</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col__title">Service Areas</p>
+          <ul class="footer-col__links">
+            <li><a href="/near-me/vancouver">Vancouver</a></li>
+            <li><a href="/near-me/surrey">Surrey</a></li>
+            <li><a href="/near-me/north-vancouver">North Vancouver</a></li>
+            <li><a href="/near-me/west-vancouver">West Vancouver</a></li>
+            <li><a href="/near-me/richmond">Richmond</a></li>
+            <li><a href="/near-me/coquitlam">Coquitlam</a></li>
+            <li><a href="/near-me/">All 14 areas &rarr;</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col__title">Connect</p>
+          <ul class="footer-col__links">
+            <li><a href="https://www.google.com/maps?cid=14568573342021237088" target="_blank" rel="noopener">Google Reviews</a></li>
+            <li><a href="https://birdeye.com/great-canadian-property-services-176098426886337/review-us" target="_blank" rel="noopener">Leave a Review</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/articles/">Articles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year"></span> Great Canadian Property Services. All rights reserved.</span>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="/privacy">Privacy Policy</a> &middot;
+          <a href="/terms">Terms of Use</a> &middot;
+          <a href="/sitemap">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

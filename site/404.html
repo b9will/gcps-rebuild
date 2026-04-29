@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Great Canadian Property Services</title>
+    <meta name="description" content="The page you were looking for has moved or no longer exists. Returning you to Great Canadian Property Services.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="refresh" content="5;url=/">
+
+    <link rel="canonical" href="https://www.greatcanadianpropertyservices.ca/">
+    <meta property="og:title" content="Page Not Found | Great Canadian Property Services">
+    <meta property="og:description" content="The page you were looking for has moved or no longer exists.">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:site_name" content="Great Canadian Property Services">
+
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/assets/css/design-system.css">
+
+    <style>
+        body { display: flex; flex-direction: column; min-height: 100vh; }
+        main { flex: 1; display: flex; align-items: center; justify-content: center; padding: clamp(6rem, 14vh, 9rem) 0 clamp(3rem, 6vh, 5rem); position: relative; overflow: hidden; }
+        main::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 700px; height: 700px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(196,149,106,.07) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .nf {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 640px;
+            padding: 0 clamp(1.25rem, 4vw, 3rem);
+        }
+
+        .nf__numeral {
+            font-family: var(--serif);
+            font-style: italic;
+            font-weight: 300;
+            font-size: clamp(8rem, 22vw, 14rem);
+            line-height: 1;
+            color: var(--copper);
+            margin-bottom: 1rem;
+            letter-spacing: -.02em;
+        }
+
+        .nf__tag {
+            font-size: .7rem;
+            font-weight: 500;
+            letter-spacing: .25em;
+            text-transform: uppercase;
+            color: var(--copper);
+            margin-bottom: 1rem;
+        }
+
+        .nf__heading {
+            font-family: var(--serif);
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 300;
+            line-height: 1.15;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .nf__heading em { font-style: italic; color: var(--copper); }
+
+        .nf__body {
+            font-size: .95rem;
+            line-height: 1.75;
+            color: var(--text-muted);
+            max-width: 460px;
+            margin: 0 auto 1.75rem;
+        }
+
+        .nf__countdown {
+            font-size: .78rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .nf__countdown strong {
+            font-family: var(--serif);
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1.05rem;
+            color: var(--copper);
+            margin: 0 .25rem;
+        }
+
+        .nf__actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: .75rem;
+        }
+
+        @media(max-width:480px) {
+            .nf__actions { flex-direction: column; }
+            .nf__actions .btn { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav nav--solid" id="nav">
+    <div class="nav__inner">
+        <a href="/" class="nav__logo" aria-label="Great Canadian Property Services — home">
+            <img src="/assets/img/logo-lockup-light.svg" class="nav__logo-full" alt="Great Canadian Property Services">
+            <img src="/assets/img/logo-mark.svg" class="nav__logo-mark" alt="">
+        </a>
+        <div class="nav__actions">
+            <a href="/contact-us/" class="nav__cta">Get Assessment</a>
+            <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="mobile-drawer" id="mobileDrawer">
+    <a href="/residential-pressure-washing/" class="drawer-link">Residential</a>
+    <a href="/commercial-pressure-washing/" class="drawer-link">Commercial</a>
+    <a href="/residential-pressure-washing/concrete-cleaning/" class="drawer-link">Concrete Care</a>
+    <a href="/window-cleaning/" class="drawer-link">Window Cleaning</a>
+    <a href="/christmas-lighting/" class="drawer-link">Holiday Lighting</a>
+    <a href="/near-me/" class="drawer-link">Service Areas</a>
+    <a href="/reviews/" class="drawer-link">Reviews</a>
+    <a href="/pressure-washing-articles/" class="drawer-link">Articles</a>
+    <a href="/faq/" class="drawer-link">FAQ</a>
+    <a href="/about-us/" class="drawer-link">About Us</a>
+    <a href="/contact-us/" class="mobile-drawer__cta drawer-link">Request Assessment</a>
+    <a href="tel:6042606285" class="mobile-drawer__phone drawer-link">604-260-6285</a>
+</div>
+
+<main role="main">
+    <div class="nf">
+        <div class="nf__numeral" aria-hidden="true">404</div>
+        <p class="nf__tag">Page Not Found</p>
+        <h1 class="nf__heading"><em>This page</em> could not be found.</h1>
+        <p class="nf__body">The page you were looking for has moved or no longer exists. We're taking you home.</p>
+        <p class="nf__countdown" aria-live="polite">Redirecting in <strong id="countdown">5</strong> seconds</p>
+        <div class="nf__actions">
+            <a href="/" class="btn btn--primary">Return Home Now</a>
+            <a href="/residential-pressure-washing/" class="btn btn--outline">Browse Services</a>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="footer__brand-name">Great Canadian <span>Property Services</span></div>
+                <p>Vancouver's premier property care provider. Expert pressure washing, window cleaning, exterior maintenance, and custom holiday lighting for the finest homes and commercial properties across the Lower Mainland.</p>
+                <p style="margin-top:.85rem;">112-15428 31 Ave<br>Surrey, BC V3Z 3W4<br><a href="tel:6042606285" style="color:var(--copper);">604-260-6285</a><br><a href="mailto:info@greatcanadianpropertyservices.ca" style="color:var(--copper);">info@greatcanadianpropertyservices.ca</a></p>
+            </div>
+            <div>
+                <h4 class="footer__heading">Services</h4>
+                <a href="/residential-pressure-washing/house-washing/" class="footer__link">House Washing</a>
+                <a href="/residential-pressure-washing/roof-cleaning/" class="footer__link">Roof Cleaning</a>
+                <a href="/window-cleaning/" class="footer__link">Window Cleaning</a>
+                <a href="/residential-pressure-washing/concrete-cleaning/" class="footer__link">Concrete &amp; Paver Care</a>
+                <a href="/commercial-pressure-washing/" class="footer__link">Commercial Services</a>
+                <a href="/christmas-lighting/" class="footer__link">Holiday Lighting</a>
+            </div>
+            <div>
+                <h4 class="footer__heading">Service Areas</h4>
+                <a href="/near-me/vancouver-bc-pressure-washing/" class="footer__link">Vancouver</a>
+                <a href="/near-me/surrey-bc-pressure-washing/" class="footer__link">Surrey</a>
+                <a href="/near-me/north-vancouver-bc-pressure-washing/" class="footer__link">North Vancouver</a>
+                <a href="/near-me/west-vancouver-bc-pressure-washing/" class="footer__link">West Vancouver</a>
+                <a href="/near-me/richmond-bc-pressure-washing/" class="footer__link">Richmond</a>
+                <a href="/near-me/" class="footer__link">All 14 Areas &rarr;</a>
+            </div>
+            <div>
+                <h4 class="footer__heading">Connect</h4>
+                <a href="https://www.google.com/maps?cid=14568573342021237088" class="footer__link" target="_blank" rel="noopener">Google Reviews</a>
+                <a href="https://birdeye.com/great-canadian-property-services-176098426886337/review-us?dashboard=1" class="footer__link" target="_blank" rel="noopener">Leave a Review</a>
+                <a href="/contact-us/" class="footer__link">Contact Us</a>
+                <a href="/about-us/" class="footer__link">About Us</a>
+                <a href="/pressure-washing-articles/" class="footer__link">Articles</a>
+            </div>
+        </div>
+        <div class="footer__partners"><p class="footer__partners-label">Partner</p><a href="https://tridentpressurewashing.com" target="_blank" rel="noopener" class="footer__partner-link" aria-label="Trident — partner"><img src="/assets/img/partner-trident.svg" class="footer__partner-logo" alt="Trident"></a></div><div class="footer__bottom">
+            <p class="footer__copy">&copy; <span id="footer-year"></span> Great Canadian Property Services. All rights reserved.</p>
+            <div class="footer__legal">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Use</a>
+                <a href="/sitemap/">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+<script>
+(function () {
+    const el = document.getElementById('countdown');
+    let n = 5;
+    const tick = () => {
+        n -= 1;
+        if (el) el.textContent = n;
+        if (n <= 0) {
+            window.location.href = '/';
+            return;
+        }
+        setTimeout(tick, 1000);
+    };
+    setTimeout(tick, 1000);
+})();
+</script>
+</body>
+</html>

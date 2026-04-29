@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--
+  TEMPLATE: LOCATION PAGE (near-me/)
+  Use for: all /near-me/[city]-bc-pressure-washing pages
+  14 cities: Vancouver, Surrey, Richmond, Coquitlam, Delta, Langley,
+             Maple Ridge, North Vancouver, West Vancouver, White Rock,
+             Abbotsford, Chilliwack, Squamish, Whistler
+
+  Authority build strategy:
+  - Each city page targets "[city] pressure washing" + "[city] window cleaning" etc.
+  - H1 targets primary city KW
+  - H2s target secondary service KWs in that city
+  - LocalBusiness schema with areaServed field set to city
+  - Internal links: city page > service pages > articles
+  - Breadcrumb schema included
+
+  Variables to replace:
+  {{CITY}}              e.g. "Vancouver"
+  {{CITY_SLUG}}         e.g. "vancouver"
+  {{PROVINCE}}          "BC"
+  {{PAGE_TITLE}}        e.g. "Pressure Washing Vancouver BC | Great Canadian Property Services"
+  {{META_DESC}}         e.g. "Professional pressure washing, window cleaning, and exterior maintenance in Vancouver BC. Complimentary assessments. Fully insured. Call 604-260-6285."
+  {{CANONICAL_URL}}     e.g. https://greatcanadianpropertyservices.ca/near-me/vancouver
+  {{OG_IMAGE}}          Full image URL
+  {{CITY_DESC}}         1-2 sentences about serving this specific city
+  {{CITY_CONTEXT}}      1 paragraph about the city's property types / climate context (good for topical authority)
+-->
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESC}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Great Canadian Property Services">
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{META_DESC}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:locale" content="en_CA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="geo.region" content="CA-BC">
+  <meta name="geo.placename" content="{{CITY}}, British Columbia">
+  <link rel="icon" href="/assets/img/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/design-system.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "Great Canadian Property Services",
+        "url": "https://greatcanadianpropertyservices.ca",
+        "telephone": "+16042606285",
+        "email": "info@greatcanadianpropertyservices.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "112-15428 31 Ave",
+          "addressLocality": "Surrey",
+          "addressRegion": "BC",
+          "postalCode": "V3Z 3W4",
+          "addressCountry": "CA"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "{{CITY}}",
+          "sameAs": "https://www.wikidata.org/wiki/{{WIKIDATA_ID}}"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "{{REVIEW_COUNT}}",
+          "bestRating": "5"
+        },
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Property Care Services in {{CITY}} BC",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pressure Washing {{CITY}}" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Window Cleaning {{CITY}}" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "House Washing {{CITY}}" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Cleaning {{CITY}}" } }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://greatcanadianpropertyservices.ca/" },
+          { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://greatcanadianpropertyservices.ca/near-me/" },
+          { "@type": "ListItem", "position": 3, "name": "{{CITY}} BC", "item": "{{CANONICAL_URL}}" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-nav site-nav--solid" role="banner">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Great Canadian Property Services">
+        Great Canadian <span>Property Services</span>
+      </a>
+      <button class="nav-burger" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Main navigation">
+        <a href="/residential/">Residential</a>
+        <a href="/commercial/">Commercial</a>
+        <a href="/residential/concrete-cleaning">Concrete Care</a>
+        <a href="/christmas-lighting">Holiday Lighting</a>
+        <a href="/window-cleaning">Window Cleaning</a>
+        <a href="/reviews">Reviews</a>
+        <a href="/contact-us" class="nav-cta">Get Assessment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BREADCRUMB -->
+    <div class="container" style="padding-top:calc(var(--nav-h) + 0.5rem);">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="/near-me/">Service Areas</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">{{CITY}}, BC</span>
+      </nav>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Page header">
+      <img src="{{OG_IMAGE}}" alt="Property care services in {{CITY}} BC" class="page-hero__bg" loading="eager">
+      <div class="container page-hero__content">
+        <p class="eyebrow page-hero__eyebrow">{{CITY}}, British Columbia</p>
+        <h1 class="heading-lg page-hero__title animate-in">
+          Pressure Washing &amp; Property Care in <em>{{CITY}}</em>
+        </h1>
+        <p class="page-hero__desc animate-in" data-delay="1">{{CITY_DESC}}</p>
+        <div style="margin-top:2rem;" class="animate-in" data-delay="2">
+          <a href="/contact-us" class="btn btn-primary">Request Complimentary Assessment</a>
+          <a href="tel:6042606285" class="btn btn-outline" style="margin-left:1rem;">604-260-6285</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITY CONTEXT -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start;">
+          <div class="reveal">
+            <p class="eyebrow">Serving {{CITY}}</p>
+            <div class="divider" style="margin:1rem 0 1.5rem;"></div>
+            <h2 class="heading-md">Property Care Built for <em>{{CITY}}'s</em> Climate</h2>
+          </div>
+          <div class="reveal" data-delay="1">
+            <p style="font-size:var(--fs-sm); line-height:1.9; color:var(--c-text-mid);">{{CITY_CONTEXT}}</p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+              <a href="/contact-us" class="btn btn-outline-dark">Request Assessment</a>
+              <a href="tel:6042606285" class="btn btn-outline-dark">604-260-6285</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES IN THIS CITY -->
+    <section class="section section--cream">
+      <div class="container">
+        <div style="text-align:center; max-width:640px; margin:0 auto 4rem;" class="reveal">
+          <p class="eyebrow">What We Offer</p>
+          <div class="divider divider-center" style="margin:1rem auto 1.5rem;"></div>
+          <h2 class="heading-md">Our Services in <em>{{CITY}}</em></h2>
+        </div>
+        <div class="service-grid">
+          <a href="/residential/house-washing" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">House Washing</h3>
+            <p class="service-item__desc">Soft wash exterior cleaning that removes algae, moss, and grime from siding, trim, and fascia.</p>
+          </a>
+          <a href="/residential/roof-cleaning" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Roof Cleaning</h3>
+            <p class="service-item__desc">Safe, low-pressure removal of moss, lichen, and organic growth to protect your roof investment.</p>
+          </a>
+          <a href="/window-cleaning" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Window Cleaning</h3>
+            <p class="service-item__desc">Water-fed pole and squeegee methods for streak-free windows on residential and commercial properties.</p>
+          </a>
+          <a href="/residential/driveway-cleaning" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Driveway Cleaning</h3>
+            <p class="service-item__desc">Pressure washing that restores concrete and paver driveways to their original condition.</p>
+          </a>
+          <a href="/residential/concrete-paver-sealing" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Concrete &amp; Paver Sealing</h3>
+            <p class="service-item__desc">Protective sealant applied after cleaning to guard against moisture, UV, and future growth.</p>
+          </a>
+          <a href="/commercial/" class="service-item reveal" style="display:block;">
+            <div class="service-item__icon" aria-hidden="true"></div>
+            <h3 class="service-item__title">Commercial Services</h3>
+            <p class="service-item__desc">Building washing, fleet washing, and exterior maintenance programs for commercial properties in {{CITY}}.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEARBY AREAS (internal linking) -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align:center; max-width:560px; margin:0 auto 3rem;" class="reveal">
+          <p class="eyebrow">Also Serving</p>
+          <div class="divider divider-center" style="margin:1rem auto 1.5rem;"></div>
+          <h2 class="heading-md">Nearby Communities</h2>
+        </div>
+        <div class="areas-grid">
+          <!-- Populate minus current city -->
+          <a href="/near-me/vancouver" class="area-item">Vancouver</a>
+          <a href="/near-me/surrey" class="area-item">Surrey</a>
+          <a href="/near-me/north-vancouver" class="area-item">North Vancouver</a>
+          <a href="/near-me/west-vancouver" class="area-item">West Vancouver</a>
+          <a href="/near-me/richmond" class="area-item">Richmond</a>
+          <a href="/near-me/coquitlam" class="area-item">Coquitlam</a>
+          <a href="/near-me/delta" class="area-item">Delta</a>
+          <a href="/near-me/langley" class="area-item">Langley</a>
+          <a href="/near-me/white-rock" class="area-item">White Rock</a>
+          <a href="/near-me/maple-ridge" class="area-item">Maple Ridge</a>
+          <a href="/near-me/abbotsford" class="area-item">Abbotsford</a>
+          <a href="/near-me/chilliwack" class="area-item">Chilliwack</a>
+          <a href="/near-me/squamish" class="area-item">Squamish</a>
+          <a href="/near-me/whistler" class="area-item">Whistler</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS (show 2-3 relevant reviews) -->
+    <section class="section section--cream">
+      <div class="container">
+        <div style="text-align:center; max-width:560px; margin:0 auto 3rem;" class="reveal">
+          <p class="eyebrow">Client Testimonials</p>
+          <div class="divider divider-center" style="margin:1rem auto 1.5rem;"></div>
+          <h2 class="heading-md"><em>Trusted</em> by {{CITY}} Properties</h2>
+        </div>
+        <div class="review-grid">
+          <!-- Pull 2-3 reviews from {{CITY}} or nearby -->
+        </div>
+        <div style="text-align:center; margin-top:3rem;">
+          <a href="/reviews" class="btn btn-outline-dark">Read All Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (city-specific) -->
+    <section class="section">
+      <div class="container" style="max-width:800px;">
+        <div style="margin-bottom:3rem;" class="reveal">
+          <p class="eyebrow">Common Questions</p>
+          <div class="divider" style="margin:1rem 0 1.5rem;"></div>
+          <h2 class="heading-md">Questions About Service in {{CITY}}</h2>
+        </div>
+        <details class="faq-item">
+          <summary>Do you serve all of {{CITY}}, BC?</summary>
+          <p class="faq-item__body">Yes. We serve residential and commercial properties throughout {{CITY}} and the surrounding area. Contact us for a complimentary assessment at your property.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How often should I pressure wash my home in {{CITY}}?</summary>
+          <p class="faq-item__body">Given the Lower Mainland's coastal climate, most homes benefit from exterior washing at least once per year. Properties near trees or in shaded areas may require more frequent care due to accelerated moss and algae growth.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is a property assessment really free?</summary>
+          <p class="faq-item__body">Yes, completely. We provide complimentary, no-obligation property assessments for all of our services in {{CITY}}. We will schedule a convenient time, evaluate your property, and recommend the right care plan. No pressure, no commitment required.</p>
+        </details>
+        <!-- Add more city-specific FAQs -->
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="container">
+        <p class="eyebrow" style="color:var(--c-gold);">{{CITY}}, BC</p>
+        <div class="divider divider-center" style="background:var(--c-gold); margin:1rem auto 1.5rem;"></div>
+        <h2 class="heading-md" style="color:var(--c-white);">Request a Complimentary Assessment in <em>{{CITY}}</em></h2>
+        <p style="font-family:var(--f-serif); font-size:var(--fs-md); opacity:0.7; margin-top:1rem; font-weight:300;">
+          No obligation. We will evaluate your property and recommend the right care plan.
+        </p>
+        <div class="btn-group">
+          <a href="/contact-us" class="btn btn-primary">Request Assessment</a>
+          <a href="tel:6042606285" class="btn btn-outline">Call 604-260-6285</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (same as other pages) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Great Canadian Property Services</div>
+          <p class="footer-tagline">Vancouver's premier property care provider. Expert pressure washing, window cleaning, and exterior maintenance across the Lower Mainland.</p>
+          <address class="footer-address" style="font-style:normal;">
+            112-15428 31 Ave<br>Surrey, BC V3Z 3W4<br>
+            <a href="tel:6042606285">604-260-6285</a><br>
+            <a href="mailto:info@greatcanadianpropertyservices.ca">info@greatcanadianpropertyservices.ca</a>
+          </address>
+        </div>
+        <div>
+          <p class="footer-col__title">Services</p>
+          <ul class="footer-col__links">
+            <li><a href="/residential/house-washing">House Washing</a></li>
+            <li><a href="/residential/roof-cleaning">Roof Cleaning</a></li>
+            <li><a href="/window-cleaning">Window Cleaning</a></li>
+            <li><a href="/residential/concrete-cleaning">Concrete Cleaning</a></li>
+            <li><a href="/commercial/">Commercial Services</a></li>
+            <li><a href="/christmas-lighting">Holiday Lighting</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col__title">Service Areas</p>
+          <ul class="footer-col__links">
+            <li><a href="/near-me/vancouver">Vancouver</a></li>
+            <li><a href="/near-me/surrey">Surrey</a></li>
+            <li><a href="/near-me/north-vancouver">North Vancouver</a></li>
+            <li><a href="/near-me/richmond">Richmond</a></li>
+            <li><a href="/near-me/coquitlam">Coquitlam</a></li>
+            <li><a href="/near-me/">All 14 areas &rarr;</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col__title">Connect</p>
+          <ul class="footer-col__links">
+            <li><a href="https://www.google.com/maps?cid=14568573342021237088" target="_blank" rel="noopener">Google Reviews</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/articles/">Articles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year"></span> Great Canadian Property Services. All rights reserved.</span>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="/privacy">Privacy Policy</a> &middot;
+          <a href="/terms">Terms of Use</a> &middot;
+          <a href="/sitemap">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
