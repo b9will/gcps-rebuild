@@ -418,7 +418,7 @@ const residentialServices = [
     ],
     related: [
       { href: '/residential-pressure-washing/house-washing/', title: 'House Washing', text: 'Pair window cleaning with a soft house wash for a complete exterior refresh.' },
-      { href: '/commercial-pressure-washing/window-cleaning/', title: 'Commercial Window Cleaning', text: 'Run a business or strata? Our recurring commercial programmes apply.' },
+      { href: '/commercial-pressure-washing/window-cleaning/', title: 'Commercial Window Cleaning', text: 'Run a business or strata? Our recurring commercial services apply.' },
       { href: '/window-cleaning/', title: 'About Our Window Cleaning', text: 'Background on methods, equipment, and the standards we hold ourselves to.' }
     ],
     review: HOMEPAGE_REVIEWS[2]
@@ -686,7 +686,7 @@ const commercialServices = [
   {
     slug: 'building-washing',
     title: 'Commercial Building Washing in Vancouver | Great Canadian Property Services',
-    desc: 'Soft-wash and pressure-wash care for office buildings, retail centres, and strata complexes across Greater Vancouver. Recurring programmes available.',
+    desc: 'Soft-wash and pressure-wash care for office buildings, retail centres, and strata complexes across Greater Vancouver. Recurring services available.',
     h1Pre: 'Facades Worth', h1Em: 'Looking At', tag: 'Building Washing',
     sub: 'Comprehensive exterior care for office buildings, retail centres, strata complexes, and mixed-use properties. Maintained at the standard your tenants and clients expect.',
     heroImg: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80&auto=format',
@@ -694,8 +694,8 @@ const commercialServices = [
     splitImg: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1200&q=80&auto=format',
     splitAlt: 'Modern commercial property exterior',
     splitTag: 'For Owners and Managers',
-    splitHeadPre: 'A Programme', splitHeadEm: 'Not Just a Visit',
-    splitBody: 'One-time washes have their place, but most commercial properties benefit from a recurring programme that protects the building envelope and keeps presentation consistent year-round. We design schedules to minimise disruption to tenants and operations.',
+    splitHeadPre: 'A Service', splitHeadEm: 'Not Just a Visit',
+    splitBody: 'One-time washes have their place, but most commercial properties benefit from a recurring service that protects the building envelope and keeps presentation consistent year-round. We design schedules to minimise disruption to tenants and operations.',
     features: [
       'Soft wash for delicate cladding and signage',
       'Pressure wash for hardscape and durable surfaces',
@@ -704,21 +704,21 @@ const commercialServices = [
     ],
     breakImg: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&auto=format',
     breakAlt: 'Office building exterior at sunset',
-    processHeading: 'A Building Wash<br><em>Run Like a Programme</em>',
+    processHeading: 'A Building Wash<br><em>Run Like a Service</em>',
     process: [
       { title: 'Site Walk', text: 'Identify cladding types, problem areas, access constraints, and tenant impact considerations.' },
-      { title: 'Programme', text: 'Design a recurring or one-time scope. Confirm schedule, scope, and reporting requirements.' },
+      { title: 'Service', text: 'Design a recurring or one-time scope. Confirm schedule, scope, and reporting requirements.' },
       { title: 'Execute', text: 'Soft wash and pressure wash per surface. Discreet operation around tenants and customers.' },
       { title: 'Report', text: 'Documented results and any flagged maintenance items for your file.' }
     ],
     faqs: [
       { q: 'Do you carry commercial insurance?', a: 'Yes. WCB coverage and commercial liability insurance with COI available on request.' },
       { q: 'Can you work after hours?', a: 'Yes. Many commercial properties prefer evening or weekend service to avoid tenant or customer disruption. We accommodate.' },
-      { q: 'Do you handle multi-building strata?', a: 'Yes. We manage multi-building strata programmes with consolidated invoicing and a single point of contact.' },
+      { q: 'Do you handle multi-building strata?', a: 'Yes. We manage multi-building strata services with consolidated invoicing and a single point of contact.' },
       { q: 'How often should a commercial building be washed?', a: 'Most commercial properties benefit from twice-yearly washing. High-traffic retail or properties under heavy tree cover often need more.' }
     ],
     related: [
-      { href: '/commercial-pressure-washing/window-cleaning/', title: 'Commercial Window Cleaning', text: 'Recurring storefront and multi-storey programmes that keep glass consistently clean.' },
+      { href: '/commercial-pressure-washing/window-cleaning/', title: 'Commercial Window Cleaning', text: 'Recurring storefront and multi-storey services that keep glass consistently clean.' },
       { href: '/commercial-pressure-washing/gutter-cleaning/', title: 'Gutter Cleaning', text: 'Clear gutters protect the building envelope and prevent costly water damage.' },
       { href: '/commercial-pressure-washing/industrial-pressure-washing/', title: 'Industrial Pressure Washing', text: 'Heavy-duty cleaning for warehouses, loading docks, and manufacturing.' }
     ],
@@ -727,16 +727,16 @@ const commercialServices = [
   {
     slug: 'window-cleaning',
     title: 'Commercial Window Cleaning in Vancouver | Great Canadian Property Services',
-    desc: 'Recurring commercial window cleaning programmes for storefronts, office towers, and strata complexes across Greater Vancouver.',
+    desc: 'Recurring commercial window cleaning services for storefronts, office towers, and strata complexes across Greater Vancouver.',
     h1Pre: 'Glass That Stays', h1Em: 'Consistently Clean', tag: 'Commercial Window Cleaning',
-    sub: 'Recurring window cleaning programmes for storefronts, office buildings, multi-storey commercial, and strata complexes. Set the cadence, we handle the rest.',
+    sub: 'Recurring window cleaning services for storefronts, office buildings, multi-storey commercial, and strata complexes. Set the cadence, we handle the rest.',
     heroImg: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&auto=format',
     heroAlt: 'Multi-storey office building glass facade',
     splitImg: 'https://images.unsplash.com/photo-1577415124269-fc1140a69e91?w=1200&q=80&auto=format',
     splitAlt: 'Commercial storefront with clean glass',
     splitTag: 'A Subscription, Not a Service Call',
     splitHeadPre: 'Set It Up Once,', splitHeadEm: 'Stop Thinking About It',
-    splitBody: 'Most commercial properties get window cleaning when someone notices it has been a while. A subscription programme inverts that: regular visits at a cadence that fits your property type, with consistent results that never let glass get bad enough to notice.',
+    splitBody: 'Most commercial properties get window cleaning when someone notices it has been a while. A subscription service inverts that: regular visits at a cadence that fits your property type, with consistent results that never let glass get bad enough to notice.',
     features: [
       'Weekly, biweekly, monthly, or quarterly cadence',
       'Water-fed pole for upper storeys, squeegee for ground floor',
@@ -745,7 +745,7 @@ const commercialServices = [
     ],
     breakImg: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80&auto=format',
     breakAlt: 'Office tower at dusk',
-    processHeading: 'A Recurring Programme<br><em>Built Around Your Property</em>',
+    processHeading: 'A Recurring Service<br><em>Built Around Your Property</em>',
     process: [
       { title: 'Site Walk', text: 'Confirm scope, access constraints, glass type, and tenant or customer flow considerations.' },
       { title: 'Cadence', text: 'Recommend a cleaning frequency based on traffic, exposure, and your standard of presentation.' },
@@ -756,10 +756,10 @@ const commercialServices = [
       { q: 'How frequent should commercial window cleaning be?', a: 'Storefronts often want monthly or biweekly. Office buildings typically work on a quarterly cycle. We recommend based on your specific property and standards.' },
       { q: 'Can you reach high glass?', a: 'Yes. Water-fed pole systems handle most multi-storey commercial up to four or five floors safely from the ground. Higher buildings may require lift access, which we coordinate.' },
       { q: 'Do you carry commercial insurance?', a: 'Yes. WCB coverage and commercial liability insurance with COI available on request.' },
-      { q: 'Can you handle multiple sites?', a: 'Yes. We run programmes across portfolios with consolidated scheduling and invoicing.' }
+      { q: 'Can you handle multiple sites?', a: 'Yes. We run services across portfolios with consolidated scheduling and invoicing.' }
     ],
     related: [
-      { href: '/commercial-pressure-washing/building-washing/', title: 'Building Washing', text: 'Combine glass and facade care for a complete recurring programme.' },
+      { href: '/commercial-pressure-washing/building-washing/', title: 'Building Washing', text: 'Combine glass and facade care for a complete recurring service.' },
       { href: '/residential-pressure-washing/window-cleaning/', title: 'Residential Window Cleaning', text: 'Run a home-based business or live above the shop? Residential window care available.' },
       { href: '/window-cleaning/', title: 'Our Window Cleaning Approach', text: 'Background on our methods, equipment, and the standards we hold.' }
     ],
@@ -823,7 +823,7 @@ const commercialServices = [
       'Full gutter clearing including downspouts',
       'Exterior gutter brightening to remove streaking',
       'Inspection report flagging any maintenance concerns',
-      'Recurring programmes available, fall priority'
+      'Recurring services available, fall priority'
     ],
     breakImg: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&auto=format',
     breakAlt: 'Commercial building roofline',
@@ -842,7 +842,7 @@ const commercialServices = [
     ],
     related: [
       { href: '/commercial-pressure-washing/building-washing/', title: 'Building Washing', text: 'Pair gutter clearing with building washing for a complete envelope refresh.' },
-      { href: '/commercial-pressure-washing/window-cleaning/', title: 'Commercial Window Cleaning', text: 'Recurring glass programmes that keep storefronts and offices presentable.' },
+      { href: '/commercial-pressure-washing/window-cleaning/', title: 'Commercial Window Cleaning', text: 'Recurring glass services that keep storefronts and offices presentable.' },
       { href: '/commercial-pressure-washing/', title: 'All Commercial Services', text: 'Browse the full set of commercial offerings.' }
     ],
     review: HOMEPAGE_REVIEWS[2]
@@ -911,8 +911,8 @@ function buildCommercialServicePage(s) {
     reviewsSection({ tag: 'From a Strata Manager', heading: '<em>Reliable</em> Commercial Partner', reviews: [s.review], sec: 'section--charcoal' }),
     areasSection(),
     faqSection({ heading: `<em>${s.tag}</em> FAQs`, faqs: s.faqs }),
-    relatedServicesSection({ heading: 'Round Out the<br><em>Commercial Programme</em>', items: s.related, sec: 'section--warm' }),
-    finalCTA({ heading: 'Build a <em>Programme</em> That Fits' })
+    relatedServicesSection({ heading: 'Round Out the<br><em>Commercial Service</em>', items: s.related, sec: 'section--warm' }),
+    finalCTA({ heading: 'Build a <em>Service</em> That Fits' })
   ].join('\n\n');
 
   return pageWrap({

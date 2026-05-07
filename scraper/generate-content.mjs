@@ -204,8 +204,8 @@ const ARTICLES = [
 <p>For upper-storey glass, we use water-fed pole technology with purified water. It cleans without soap, dries spot-free, and removes the safety risk of ladder work on upper floors. Detail on accessible glass is squeegee, scrim, and steady hands.</p>
 
 <div class="article-cta">
-    <h3 class="article-cta__title">Considering a Window Cleaning Programme?</h3>
-    <p class="article-cta__text">We offer recurring twice-yearly programmes for residential properties across Greater Vancouver. Discount applies after the first scheduled visit.</p>
+    <h3 class="article-cta__title">Considering a Window Cleaning Service?</h3>
+    <p class="article-cta__text">We offer recurring twice-yearly services for residential properties across Greater Vancouver. Discount applies after the first scheduled visit.</p>
     <a href="/contact-us/" class="btn btn--primary">Request a Complimentary Assessment</a>
 </div>
 
@@ -243,7 +243,7 @@ const ARTICLES = [
 <h3>Water-Fed Pole Wins For:</h3>
 <ul>
   <li><strong>Upper-storey glass.</strong> Cleaning second, third, even fourth-floor glass safely from the ground. No ladders, no fall risk, no climbing in unstable conditions.</li>
-  <li><strong>Recurring maintenance cleaning.</strong> On glass that gets attention regularly, the speed and consistency of water-fed pole work make recurring programmes economically viable.</li>
+  <li><strong>Recurring maintenance cleaning.</strong> On glass that gets attention regularly, the speed and consistency of water-fed pole work make recurring services economically viable.</li>
   <li><strong>Frame and sill rinse.</strong> Surrounding trim, soffits, and sills get a free rinse during the cleaning, removing the dust that collects between visits.</li>
   <li><strong>Architectural glass with awkward access.</strong> High clerestories, glass over balcony rails, large picture windows above garages all benefit.</li>
 </ul>
@@ -286,7 +286,7 @@ const ARTICLES = [
 
 <h2>What Professional Cleaning Adds</h2>
 <h3>Consistency</h3>
-<p>In-house cleaning happens when someone has time. Professional recurring cleaning happens on a schedule, regardless of how busy the week was. The difference shows: clients on a recurring programme rarely have glass that gets bad enough for customers to notice.</p>
+<p>In-house cleaning happens when someone has time. Professional recurring cleaning happens on a schedule, regardless of how busy the week was. The difference shows: clients on a recurring service rarely have glass that gets bad enough for customers to notice.</p>
 
 <h3>Method</h3>
 <p>Professional crews use water-fed pole systems for upper glass, professional-grade squeegees on accessible panes, scrim work on edges, and hand detail on frames. The result is consistently spot-free, edge to edge.</p>
@@ -297,11 +297,11 @@ const ARTICLES = [
 <h3>Recovery from Neglect</h3>
 <p>Glass that has been neglected develops mineral staining, organic film, and edge buildup that consumer-grade cleaning can no longer touch. Professional restoration cleaning reverses this and re-establishes a clean baseline.</p>
 
-<h2>Recurring Programmes for Surrey Storefronts</h2>
-<p>Most Surrey storefronts work well on a monthly or biweekly cycle. High-traffic retail, food service, and properties on busy corridors often want weekly. We build programmes around your operating hours so cleaning happens before opening or after close, with consistent crews and consistent results.</p>
+<h2>Recurring Services for Surrey Storefronts</h2>
+<p>Most Surrey storefronts work well on a monthly or biweekly cycle. High-traffic retail, food service, and properties on busy corridors often want weekly. We build services around your operating hours so cleaning happens before opening or after close, with consistent crews and consistent results.</p>
 
 <div class="article-cta">
-    <h3 class="article-cta__title">Talk Through a Programme</h3>
+    <h3 class="article-cta__title">Talk Through a Service</h3>
     <p class="article-cta__text">A complimentary on-site walk-through covers scope, cadence, scheduling around your hours, and pricing. No obligation.</p>
     <a href="/contact-us/" class="btn btn--primary">Request a Complimentary Assessment</a>
 </div>
@@ -339,7 +339,7 @@ const ARTICLES = [
 <p>Steep roofs, hard-to-reach gables, properties that require lift access, and tightly-spaced installations all factor into time on site, which factors into cost.</p>
 
 <h2>What's Included</h2>
-<p>A professional holiday lighting programme in Surrey from us includes:</p>
+<p>A professional holiday lighting service in Surrey from us includes:</p>
 <ul>
   <li>On-site design consultation</li>
   <li>Commercial-grade LED strands (we provide)</li>
@@ -964,10 +964,10 @@ console.log('\n[Batch G] Utility pages...');
     `<section class="section section--cream">
     <div class="container--narrow">
         <div class="article-body" style="font-family:var(--sans);">
-            <p>This estate property in the Lower Mainland came to us in early October looking for a holiday lighting programme that felt traditional and dignified — no flashing colours, no inflatable elements, just warm white lights articulating the lines of the property and a few accent moments in the garden.</p>
+            <p>This estate property in the Lower Mainland came to us in early October looking for a holiday lighting service that felt traditional and dignified — no flashing colours, no inflatable elements, just warm white lights articulating the lines of the property and a few accent moments in the garden.</p>
             <h2>The Brief</h2>
             <p>The owners wanted the property to read as cared-for from the curb, with lighting that emphasised the roofline architecture, the entry sequence, and a pair of mature trees flanking the driveway. The aesthetic reference was traditional New England, applied with restraint.</p>
-            <h2>The Programme</h2>
+            <h2>The Service</h2>
             <ul>
                 <li>Roofline outlining in warm white commercial-grade LED, every gable and dormer articulated</li>
                 <li>Entry trees wrapped from base to canopy, two specimens flanking the drive</li>
@@ -977,7 +977,7 @@ console.log('\n[Batch G] Utility pages...');
                 <li>Scheduled removal first week of January, off-season storage included</li>
             </ul>
             <h2>The Outcome</h2>
-            <p>The owners reported neighbours stopping by to comment, and several neighbours reaching out about programmes for their own properties the following season. The lighting kit is in storage for the off-season and will return next October, refreshed and ready.</p>
+            <p>The owners reported neighbours stopping by to comment, and several neighbours reaching out about services for their own properties the following season. The lighting kit is in storage for the off-season and will return next October, refreshed and ready.</p>
             <blockquote>The whole neighbourhood commented on them. Installation was quick and they came back right away to take everything down after the holidays.</blockquote>
             <p>Holiday lighting is one of the most visible expressions of how a property is cared for. Done with restraint and quality strands, it produces something that reads as intentional from the curb and across the season.</p>
         </div>

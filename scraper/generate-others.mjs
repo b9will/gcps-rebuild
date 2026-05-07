@@ -274,10 +274,10 @@ console.log('\n[Batch D] Top-level service pages...');
 
   const faqs = [
     { q: 'When should I book holiday lighting?', a: 'Book by mid-October for installation before American Thanksgiving. Late bookings can sometimes be accommodated through November but design options narrow as the season fills.' },
-    { q: 'Do you provide the lights?', a: 'Yes. We use professional-grade commercial LED strands designed for outdoor weather and multiple seasons of use. Lights and clips are included in the programme.' },
+    { q: 'Do you provide the lights?', a: 'Yes. We use professional-grade commercial LED strands designed for outdoor weather and multiple seasons of use. Lights and clips are included in the service.' },
     { q: 'What does removal look like?', a: 'In early January we return on a scheduled date to take everything down carefully, no damage to roofing or trim, and store the kit for the off-season.' },
     { q: 'Can you handle just trees, just rooflines, or full property?', a: 'Yes. From a single feature tree to a full estate display, we scope to fit your property and your aesthetic.' },
-    { q: 'What happens if a strand fails mid-season?', a: 'We come back. Mid-season repairs are part of the programme. No ladders for you, ever.' }
+    { q: 'What happens if a strand fails mid-season?', a: 'We come back. Mid-season repairs are part of the service. No ladders for you, ever.' }
   ];
 
   const body = [
@@ -315,7 +315,7 @@ console.log('\n[Batch D] Top-level service pages...');
 </section>`,
     imageBreak({ src: 'https://images.unsplash.com/photo-1481253127861-534498168948?w=1920&q=80&auto=format', alt: 'Festive evening exterior lighting' }),
     processSection({
-      heading: 'How a Holiday Lighting<br><em>Programme Runs</em>',
+      heading: 'How a Holiday Lighting<br><em>Service Runs</em>',
       steps: [
         { title: 'Design', text: 'Walk your property, map a layout, recommend strand types, colours, and points of emphasis. No-pressure proposal.' },
         { title: 'Install', text: 'Professional installation, fully clipped, no staples, weatherproof connectors. Done before your first guest arrives.' },
@@ -379,7 +379,7 @@ console.log('\n[Batch D] Top-level service pages...');
   ];
 
   const faqs = [
-    { q: 'Do you do residential and commercial?', a: 'Yes. Residential, commercial storefront, and multi-storey commercial. Recurring programmes available for all three.' },
+    { q: 'Do you do residential and commercial?', a: 'Yes. Residential, commercial storefront, and multi-storey commercial. Recurring services available for all three.' },
     { q: 'What is a water-fed pole?', a: 'A telescoping pole with a soft brush head that delivers purified water to the glass. Cleans without soap, dries spot-free, and reaches multi-storey glass safely from the ground.' },
     { q: 'Do you do interior glass?', a: 'Yes. Interior, exterior, or both. We protect floors, sills, and furnishings before any work begins.' },
     { q: 'How often should I have windows cleaned?', a: 'Most homes do well with twice-yearly cleaning. Storefronts often want monthly or biweekly. Office buildings typically work on a quarterly cycle.' }
@@ -411,7 +411,7 @@ console.log('\n[Batch D] Top-level service pages...');
                     <div class="feature-list__item">Squeegee, scrim, and detail for ground-floor glass</div>
                     <div class="feature-list__item">Frames, tracks, sills hand-cleaned</div>
                     <div class="feature-list__item">Screens removed, washed, reinstalled</div>
-                    <div class="feature-list__item">Recurring programmes for residential and commercial</div>
+                    <div class="feature-list__item">Recurring services for residential and commercial</div>
                 </div>
             </div>
         </div>
@@ -424,11 +424,11 @@ console.log('\n[Batch D] Top-level service pages...');
             <p class="section__tag">Two Pages, One Standard</p>
             <h2 class="section__heading">Choose <em>Residential</em><br>or <em>Commercial</em></h2>
             <div class="sep"></div>
-            <p class="section__body">Detailed information for both lives on dedicated pages, including booking, scope, and recurring programme options.</p>
+            <p class="section__body">Detailed information for both lives on dedicated pages, including booking, scope, and recurring service options.</p>
         </div>
         <div class="service-card-grid">
             <a href="/residential-pressure-washing/window-cleaning/" class="service-card reveal"><h3 class="service-card__title">Residential Window Cleaning</h3><p class="service-card__text">Interior and exterior glass for Vancouver homes, every storey. Twice-yearly cycles for most properties.</p><span class="service-card__more">Learn More &rarr;</span></a>
-            <a href="/commercial-pressure-washing/window-cleaning/" class="service-card reveal reveal-d1"><h3 class="service-card__title">Commercial Window Cleaning</h3><p class="service-card__text">Recurring storefront and multi-storey programmes. Set the cadence, we handle the rest.</p><span class="service-card__more">Learn More &rarr;</span></a>
+            <a href="/commercial-pressure-washing/window-cleaning/" class="service-card reveal reveal-d1"><h3 class="service-card__title">Commercial Window Cleaning</h3><p class="service-card__text">Recurring storefront and multi-storey services. Set the cadence, we handle the rest.</p><span class="service-card__more">Learn More &rarr;</span></a>
         </div>
     </div>
 </section>`,
@@ -448,7 +448,7 @@ console.log('\n[Batch D] Top-level service pages...');
 
   const html = pageWrap({
     title: 'Window Cleaning in Vancouver &amp; Surrey | Great Canadian Property Services',
-    desc: 'Residential and commercial window cleaning across Greater Vancouver. Water-fed pole and squeegee. Recurring programmes for homes, storefronts, and offices.',
+    desc: 'Residential and commercial window cleaning across Greater Vancouver. Water-fed pole and squeegee. Recurring services for homes, storefronts, and offices.',
     canonical,
     image: heroImg.replace('w=1920', 'w=1200'),
     extraSchemas: [
@@ -494,7 +494,7 @@ function locationPage(city) {
   const faqs = [
     { q: `Do you serve all of ${city.name}?`, a: `Yes, we serve every neighbourhood in ${city.name} and the surrounding communities. If you're unsure whether your address falls in our service area, give us a call at ${PHONE} and we'll confirm.` },
     { q: `When is the best time of year for exterior care in ${city.name}?`, a: `Late spring and early summer are ideal for most pressure washing. Fall is best for gutters and pre-winter prep. Holiday lighting bookings fill in October.` },
-    { q: `Do you offer recurring programmes in ${city.name}?`, a: 'Yes. Quarterly, biannual, and custom recurring schedules for both residential and commercial clients. Discount applies to most ongoing programmes.' },
+    { q: `Do you offer recurring services in ${city.name}?`, a: 'Yes. Quarterly, biannual, and custom recurring schedules for both residential and commercial clients. Discount applies to most ongoing services.' },
     { q: `How do I get a complimentary assessment in ${city.name}?`, a: `Call ${PHONE} or fill out our contact form. We schedule an on-site walk-through, talk through what your property needs, and provide a written estimate with no obligation.` }
   ];
 
@@ -505,7 +505,7 @@ function locationPage(city) {
       tag: `Property Care in ${city.name}, BC`,
       h1Pre: 'Refined Property Care',
       h1Em: `in ${city.name}`,
-      sub: city.blurb + ' Complimentary assessments, recurring programmes, single-visit work — whichever fits your property.',
+      sub: city.blurb + ' Complimentary assessments, recurring services, single-visit work — whichever fits your property.',
       image: heroImg,
       alt: `Coastal British Columbia near ${city.name}`,
       breadcrumbs
@@ -537,7 +537,7 @@ function locationPage(city) {
                     <li class="feature-list__item"><a href="/residential-pressure-washing/roof-cleaning/">Roof Cleaning — moss, lichen, and algae removal</a></li>
                     <li class="feature-list__item"><a href="/window-cleaning/">Window Cleaning — streak-free glass on every storey</a></li>
                     <li class="feature-list__item"><a href="/residential-pressure-washing/concrete-cleaning/">Concrete Care — driveways, walkways, patios</a></li>
-                    <li class="feature-list__item"><a href="/commercial-pressure-washing/">Commercial Programmes — storefronts, strata, offices</a></li>
+                    <li class="feature-list__item"><a href="/commercial-pressure-washing/">Commercial Services — storefronts, strata, offices</a></li>
                     <li class="feature-list__item"><a href="/christmas-lighting/">Holiday Lighting — custom design and installation</a></li>
                 </ul>
                 <a href="/contact-us/" class="btn btn--outline" style="margin-top:2rem; align-self:flex-start;">Request Assessment &rarr;</a>

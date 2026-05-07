@@ -11,7 +11,7 @@ Fully insured and licensed. All property assessments are complimentary and no-ob
 
 ABOUT THE COMPANY
 -----------------
-Great Canadian Property Services is a Greater Vancouver exterior maintenance company specialising in pressure washing, soft-wash house washing, roof cleaning, window cleaning, concrete and paver care, and custom holiday lighting. The company serves both residential homeowners and commercial property managers, strata corporations, and industrial facilities. Service is characterised by meticulous workmanship, eco-considered methods, and reliable communication. The team provides recurring maintenance programmes as well as one-time visits, with custom scheduling to minimise disruption to tenants and occupants.
+Great Canadian Property Services is a Greater Vancouver exterior maintenance company specialising in pressure washing, soft-wash house washing, roof cleaning, window cleaning, concrete and paver care, and custom holiday lighting. The company serves both residential homeowners and commercial property managers, strata corporations, and industrial facilities. Service is characterised by meticulous workmanship, eco-considered methods, and reliable communication. The team provides recurring maintenance services as well as one-time visits, with custom scheduling to minimise disruption to tenants and occupants.
 
 
 RESIDENTIAL SERVICES
@@ -55,15 +55,15 @@ COMMERCIAL SERVICES
 
 Building Washing
 URL: /commercial-pressure-washing/building-washing/
-Exterior cleaning of commercial buildings, office towers, retail centres, and strata complexes using soft-wash and pressure-wash techniques appropriate for each facade material. Services are scheduled to minimise disruption to tenants and business operations. Recurring programmes available on quarterly, biannual, or custom schedules. Documented service reports provided for strata and property management records.
+Exterior cleaning of commercial buildings, office towers, retail centres, and strata complexes using soft-wash and pressure-wash techniques appropriate for each facade material. Services are scheduled to minimise disruption to tenants and business operations. Recurring services available on quarterly, biannual, or custom schedules. Documented service reports provided for strata and property management records.
 
 Commercial Window Cleaning
 URL: /commercial-pressure-washing/window-cleaning/
-Storefront, lobby, and multi-storey window cleaning for commercial properties. Water-fed pole systems are used for exterior glass up to five storeys; traditional squeegee technique for interior and ground-level glass. Recurring subscription programmes available — property managers set the cleaning frequency and the team handles scheduling and execution. Consistent results with minimal disruption to tenants and customers.
+Storefront, lobby, and multi-storey window cleaning for commercial properties. Water-fed pole systems are used for exterior glass up to five storeys; traditional squeegee technique for interior and ground-level glass. Recurring subscription services available — property managers set the cleaning frequency and the team handles scheduling and execution. Consistent results with minimal disruption to tenants and customers.
 
 Fleet Washing
 URL: /commercial-pressure-washing/fleet-washing/
-Scheduled exterior washing for company vehicle fleets including delivery vans, service trucks, heavy equipment, and passenger vehicles. Consistent fleet presentation reinforces brand image and supports preventive maintenance by removing road salt, grime, and corrosive deposits. Programmes are configured around fleet size, vehicle type, and desired cleaning frequency. On-site service available at fleet yards or commercial facilities.
+Scheduled exterior washing for company vehicle fleets including delivery vans, service trucks, heavy equipment, and passenger vehicles. Consistent fleet presentation reinforces brand image and supports preventive maintenance by removing road salt, grime, and corrosive deposits. Services are configured around fleet size, vehicle type, and desired cleaning frequency. On-site service available at fleet yards or commercial facilities.
 
 Gutter Cleaning
 URL: /commercial-pressure-washing/gutter-cleaning/
@@ -79,7 +79,7 @@ TOP-LEVEL SERVICES
 
 Window Cleaning (Top Level)
 URL: /window-cleaning/
-Residential and commercial window cleaning across Greater Vancouver. Covers all property types from single-family homes to multi-storey commercial buildings. Water-fed pole system delivers purified water for exterior glass; traditional squeegee for interior surfaces. Twice-yearly residential programmes recommended for coastal BC. Commercial recurring programmes available.
+Residential and commercial window cleaning across Greater Vancouver. Covers all property types from single-family homes to multi-storey commercial buildings. Water-fed pole system delivers purified water for exterior glass; traditional squeegee for interior surfaces. Twice-yearly residential services recommended for coastal BC. Commercial recurring services available.
 
 Holiday Lighting
 URL: /christmas-lighting/
@@ -145,7 +145,7 @@ A comparison of the two primary residential window cleaning methods. Water-fed p
 
 Why Professional Window Cleaning Matters for Surrey Storefronts
 URL: /pressure-washing-articles/professional-window-cleaning-surrey-storefronts/
-Storefront glass is the first impression customers form of a business. The article examines what professional cleaning achieves that in-house efforts cannot: ladder-safe access to upper panes, spot-free results from purified water, and a recurring programme that ensures consistent presentation without management overhead.
+Storefront glass is the first impression customers form of a business. The article examines what professional cleaning achieves that in-house efforts cannot: ladder-safe access to upper panes, spot-free results from purified water, and a recurring service that ensures consistent presentation without management overhead.
 
 How Much Does Holiday Lighting Cost in Surrey, BC?
 URL: /pressure-washing-articles/how-much-does-holiday-lighting-cost-in-surrey-bc/
@@ -167,7 +167,7 @@ The honest case for professional exterior maintenance, written from the perspect
 FREQUENTLY ASKED QUESTIONS
 --------------------------
 
-The site-wide FAQ at /faq/ covers questions across every service category: service areas, residential pressure and soft wash, window cleaning methods and cadence, concrete and paver sealing, holiday lighting, commercial and strata programmes, bookings and pricing, and insurance, safety, and practice.
+The site-wide FAQ at /faq/ covers questions across every service category: service areas, residential pressure and soft wash, window cleaning methods and cadence, concrete and paver sealing, holiday lighting, commercial and strata services, bookings and pricing, and insurance, safety, and practice.
 
 Service-specific FAQ pages provide deeper detail in three areas:
 

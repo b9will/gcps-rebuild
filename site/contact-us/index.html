@@ -101,26 +101,17 @@
                 <p class="section__tag">Send a Message</p>
                 <h2 class="section__heading">Or, <em>Reach Us</em><br>By Form</h2>
                 <div class="sep"></div>
-                <p style="font-size:.85rem; color:var(--text-muted); line-height:1.7; margin-top:1rem; padding:1rem 1.25rem; background:rgba(196,149,106,.08); border-left:2px solid var(--copper);">This form is currently configured to open your email client with the message pre-filled. A direct submission backend will be wired up shortly.</p>
-                <form action="mailto:info@greatcanadianpropertyservices.ca" method="post" enctype="text/plain" style="margin-top:2rem; display:flex; flex-direction:column; gap:1.25rem;">
-                    <div>
-                        <label for="name" style="display:block; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:.4rem;">Name</label>
-                        <input type="text" name="name" id="name" required style="width:100%; padding:.85rem 1rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); color:var(--text-light); font-family:var(--sans); font-size:.95rem;">
-                    </div>
-                    <div>
-                        <label for="email" style="display:block; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:.4rem;">Email</label>
-                        <input type="email" name="email" id="email" required style="width:100%; padding:.85rem 1rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); color:var(--text-light); font-family:var(--sans); font-size:.95rem;">
-                    </div>
-                    <div>
-                        <label for="phone" style="display:block; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:.4rem;">Phone</label>
-                        <input type="tel" name="phone" id="phone" style="width:100%; padding:.85rem 1rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); color:var(--text-light); font-family:var(--sans); font-size:.95rem;">
-                    </div>
-                    <div>
-                        <label for="message" style="display:block; font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--text-muted); margin-bottom:.4rem;">Message</label>
-                        <textarea name="message" id="message" rows="5" required style="width:100%; padding:.85rem 1rem; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); color:var(--text-light); font-family:var(--sans); font-size:.95rem; resize:vertical;"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary" style="border:none; cursor:pointer;">Send Message</button>
-                </form>
+                <p style="font-size:.92rem; color:var(--text-muted); line-height:1.7; margin:1rem 0 1.75rem;">Tell us about your property and we will be in touch within one business day.</p>
+
+                <!-- Markate lead form widget -->
+                <div id="markate-widget-contact"></div>
+                <script>(function() { function async() {var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                var u = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.markate.com/public/widget/contact/js';
+                var t = Math.random()*10000000000000000;
+                s.src = u + '?id=dac98210764597fe48ea4abb7e02adc5:65743:114dad3f&ref=' + encodeURIComponent(window.location.href) + '&t=' + t;
+                var w = document.getElementById('markate-widget-contact'); w.parentNode.insertBefore(s, w);
+                } if (window.attachEvent) { window.attachEvent('onload', async); } else { window.addEventListener('load', async, false); }
+                })();</script>
             </div>
         </div>
     </div>

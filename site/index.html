@@ -181,7 +181,7 @@
             --sans: 'Outfit', system-ui, sans-serif;
         }
 
-        html { scroll-behavior: smooth; font-size: 17px; }
+        html { scroll-behavior: smooth; font-size: 18px; }
 
         body {
             font-family: var(--sans);
@@ -268,6 +268,15 @@
             padding: 1.15rem 0;
             transition: background .4s, padding .4s, box-shadow .4s;
         }
+        .nav:not(.scrolled):not(.nav--solid)::before {
+            content: '';
+            position: absolute;
+            inset: 0 0 auto 0;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(13,13,13,.55) 0%, rgba(13,13,13,0) 100%);
+            pointer-events: none;
+            z-index: -1;
+        }
         .nav.scrolled {
             background: rgba(13,13,13,.96);
             backdrop-filter: blur(16px);
@@ -278,8 +287,8 @@
         .nav__inner { max-width: 1280px; margin: 0 auto; padding: 0 clamp(1.25rem,4vw,3rem); display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
         .nav__logo { display: inline-flex; align-items: center; flex-shrink: 0; line-height: 0; }
         .nav__logo img { display: block; }
-        .nav__logo-full { height: 42px; max-width: 280px; opacity: 1; transition: opacity .45s cubic-bezier(.23,1,.32,1), max-width .5s cubic-bezier(.23,1,.32,1); }
-        .nav__logo-mark { height: 36px; max-width: 0; opacity: 0; transition: opacity .45s cubic-bezier(.23,1,.32,1), max-width .5s cubic-bezier(.23,1,.32,1); }
+        .nav__logo-full { height: 56px; max-width: 320px; opacity: 1; transition: opacity .45s cubic-bezier(.23,1,.32,1), max-width .5s cubic-bezier(.23,1,.32,1); }
+        .nav__logo-mark { height: 44px; max-width: 0; opacity: 0; transition: opacity .45s cubic-bezier(.23,1,.32,1), max-width .5s cubic-bezier(.23,1,.32,1); }
         .nav.scrolled .nav__logo-full { opacity: 0; max-width: 0; }
         .nav.scrolled .nav__logo-mark { opacity: 1; max-width: 50px; }
         .nav__actions { display: flex; align-items: center; gap: 1rem; }
@@ -318,7 +327,22 @@
 
         @media(max-width:520px) {
             .nav__cta { padding: .65rem 1.1rem; font-size: .72rem; }
-            .nav__logo-full { height: 36px; max-width: 220px; }
+            .nav__logo-full { height: 46px; max-width: 260px; }
+        }
+
+        @media(max-width:420px) {
+            .nav__inner { gap: .75rem; padding-left: 1rem; padding-right: 1rem; }
+            .nav__actions { gap: .55rem; }
+            .nav__cta {
+                white-space: normal;
+                line-height: 1.15;
+                padding: .55rem .9rem;
+                font-size: .68rem;
+                text-align: center;
+                letter-spacing: .08em;
+                max-width: 96px;
+            }
+            .nav__logo-full { max-width: 175px; height: 40px; }
         }
 
         /* HERO */
