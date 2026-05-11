@@ -179,18 +179,20 @@ img { max-width: 100%; display: block; }
 }
 
 @media(max-width:420px) {
-    .nav__inner { gap: .75rem; padding-left: 1rem; padding-right: 1rem; }
-    .nav__actions { gap: .55rem; }
+    .nav__inner { gap: .65rem; padding-left: 1rem; padding-right: 1rem; }
+    .nav__actions { gap: .5rem; }
     .nav__cta {
-        white-space: normal;
-        line-height: 1.15;
-        padding: .55rem .9rem;
-        font-size: .68rem;
-        text-align: center;
-        letter-spacing: .08em;
-        max-width: 96px;
+        white-space: nowrap;
+        line-height: 1;
+        padding: .65rem .85rem;
+        font-size: .64rem;
+        letter-spacing: .05em;
     }
-    .nav__logo-full { max-width: 175px; height: 40px; }
+    .nav__logo-full { max-width: 150px; height: 36px; }
+}
+@media(max-width:340px) {
+    .nav__cta { font-size: .6rem; padding: .6rem .7rem; letter-spacing: .03em; }
+    .nav__logo-full { max-width: 130px; height: 32px; }
 }
 
 /* HERO (homepage full-bleed) */
