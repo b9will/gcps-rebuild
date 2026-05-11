@@ -212,8 +212,15 @@ img { max-width: 100%; display: block; }
 
 @media(max-width:480px) {
     .hero { min-height: 90vh; min-height: 90dvh; }
-    .hero__actions { flex-direction: column; }
-    .hero__actions .btn { text-align: center; }
+    .hero__actions { flex-direction: column; align-items: stretch; }
+    .hero__actions .btn {
+        text-align: center;
+        white-space: normal;
+        line-height: 1.25;
+        width: 100%;
+        padding: .95rem 1.25rem;
+    }
+    .hero__tag { letter-spacing: .18em; }
 }
 
 /* PAGE HERO (interior pages, half-height) */
